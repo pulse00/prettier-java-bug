@@ -13,7 +13,9 @@ class SomeClassTest {
   void someTest() {
     SomeClass someClass = new SomeClass();
     someClass.getInteractions().add(new SomeClass.SomeInnerClass());
-    SomeClass.@Valid SomeInnerClass someInnerClass = someClass.getInteractions().get(0);
+    SomeClass.@ValidSomeInnerClass someInnerClass = someClass
+      .getInteractions()
+      .get(0);
     Assertions.assertNotNull(someInnerClass);
   }
 }
